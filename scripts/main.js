@@ -23,7 +23,7 @@ function formBuilder(spec,$el){
       $el.append('<select>');
       param.values.forEach(function (val) {
         $el.append('<option>' + val + '</option>');
-      })
+      });
       $el.append('</select>');
 
     } else {
@@ -35,7 +35,7 @@ function formBuilder(spec,$el){
       $el.append('<input type="' + param.type + '" name="' + param.name + '" style="display:block; width: 100%; max-width: 300px;">');
 
       if (param.label) {
-        $el.append('</label>')
+        $el.append('</label>');
       }
     }
 
